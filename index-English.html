@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="language-switch"><img src="img/Flag_of_Spain_(civil).svg.png" alt="" width="20px" height="12px"></a>
+
+        <a href="#" class="logo">Naito</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#certificate">Certificates</a>
+            <a href="#experience">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="img/1737328652266-removebg-preview.png" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It,s <span>Naito</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Hello, I am Naito, my real name is Gustavo Martinez. I am currently a student of computer engineering. I am developing skills in the web development field and hope to expand to other areas in the future. I also work on creating mobile applications.</p>
+
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/gustavo-mart%C3%ADnez-46b34b229/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/inightyt"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/inight_yt"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/inightyt/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <a href="#" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Web Service</h4>
+                    <p>I specialize in web development, working with technologies such as HTML, CSS, JavaScript, and frameworks like Bootstrap to create dynamic, responsive, and functional applications.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Front-end</h4>
+                    <p>I excel in front-end development and use various technologies and frameworks to create web applications, such as Angular.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Back-end</h4>
+                    <p>I have experience in back-end development, having used technologies like Node.js and PHP in previous projects.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="container">
+            <div class="row" id="skillsContainer">
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/Python-logo-notext.svg.png" alt="" width="60px">
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/Angular_full_color_logo.svg.png" alt="" width="60px">
+                        <span>Angular</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/ionic-icon-png.pngw3.webp" alt="" width="60px">
+                        <span>Ionic</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/PHP-logo.svg.png" alt="" width="115px">
+                        <span>PHP</span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <img src="img/JavaScript-logo.png" alt="" width="60px">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Education</span></h2>
+        <div class="timeline">
+            <div class="container right">
+                <div class="content">
+                    <div class="tag">
+                        <h2>Liceo Municipal Polivalente Maria Pinto 2017-2020</h2>
+                    </div>
+                    <div class="decs">
+                        <p>High school where I studied.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <div class="tag">
+                        <h2>DuocUC Institute, Melipilla Campus <br>(Computer Engineering) 2022-Present</h2>
+                    </div>
+                    <div class="decs">
+                        <p>Institute where I am currently studying for my Computer Engineering degree. Previously, I studied a technical program (Computer Programming Analyst 2022-2023) at the same institution but decided to continue with the degree.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="certificate" id="certificate">
+        <h2 class="heading">Certificates</h2>
+        <div class="container">
+            <div class="row" id="certificateContainer">
+                <div class="bar"
+                    onclick="openModal('Scrum Fundamentals Certified', 'img/ScrumFundamentalsCertified-GustavoMartinez-1039565_page-0001.jpg', 'Scrum agile methodology certificate earned from SCRUMstudy on July 5, 2024.', '' ,'https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-GustavoMartinez-1039565.pdf')">
+                    <div class="info">
+                        <img src="img/ScrumFundamentalsCertified-GustavoMartinez-1039565_page-0001.jpg" alt="" width="300px">
+                        <span>Scrum Fundamentals Certified</span>
+                        <h3>SCRUMstudy</h3>
+                    </div>
+                </div>
+                <div class="bar"
+                    onclick="openModal('Web Development', 'img/fa166f45-1118-44ef-9d29-507d3d260acd.png', 'Web development certificate from SoloLearn earned on July 23, 2024.', '', 'https://www.sololearn.com/certificates/CC-UWKPVYT1')">
+                    <div class="info">
+                        <img src="img/fa166f45-1118-44ef-9d29-507d3d260acd.png" alt="" width="300px">
+                        <span>Web Development</span>
+                        <h3>SoloLearn</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row" id="experienceContainer">
+                <div class="bar"
+                    onclick="openModal('RegistrAPP', 'img/Screenshot_2025-01-17-01-31-11-042_io.ionic.starter.jpg', 'A mobile app made with Ionic Angular for a project at DuocUC for the Mobile Applications Development course in 2023.', 'https://github.com/iNightYT/RegistAPP')">
+                    <div class="info">
+                        <img src="img/Screenshot_2025-01-17-01-31-11-042_io.ionic.starter.jpg" alt="" width="300px">
+                        <span>RegistrAPP</span>
+                        <h3>Ionic</h3>
+                    </div>
+                </div>
+                <div class="bar"
+                    onclick="openModal('Ferremas', 'img/Captura de pantalla 2025-01-15 215341.png', 'A project for DuocUC for the Platforms Integration course in 2024, mainly using pure PHP with some Bootstrap elements and two APIs: one for Transbank and one for inventory. Note: You will need to download XAMPP to view the project.', 'https://github.com/iNightYT/Ferremas')">
+                    <div class="info">
+                        <img src="img/Captura de pantalla 2025-01-15 215341.png" alt="" width="390px">
+                        <span>Ferremas</span>
+                        <h3>HTML, CSS, Bootstrap, and PHP</h3>
+                    </div>
+                </div>
+            </div>
+            
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage" src="" alt="" />
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <a id="modalGitHubLink" href="#" target="_blank" class="modal-link">GitHub Link</a>
+                <a id="modalCertificadoLink" href="#" target="_blank" class="modal-link">View Certificate</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="" onsubmit="return validarFormulario(event)">
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="number" id="number" placeholder="Phone Number" required>
+                <input type="text" id="subject" placeholder="Subject">
+            </div>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/gustavo-mart%C3%ADnez-46b34b229/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/inightyt"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/inight_yt"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/inightyt/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">
+            © Naito Dev | All Rights Reserved
+        </p>
+    </footer>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "qPQ1LBw-bqJV0foIC",
+      });
+   })();
+</script>
+    <script src="script.js"></script>
+</body>
+
+</html>
