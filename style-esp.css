@@ -316,6 +316,16 @@ span {
         width: calc(100% + 8px);
     }
 }
+@media (min-width: 1024px) {
+    .experience .bar .info img {
+        width: 100%;
+        max-width: 390px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width:1000px) {
     .home {
         gap: 4rem;

@@ -25,24 +25,37 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-function openModal(title, imageSrc, description, githubLink, certificadoLink) {
+function openModal(title, imageSrc, description, githubLink = '', certificadoLink = '', pageLink = '') {
     const modal = document.getElementById('modal');
     const modalTitle = document.getElementById('modalTitle');
     const modalImage = document.getElementById('modalImage');
     const modalDescription = document.getElementById('modalDescription');
     const modalGitHubLink = document.getElementById('modalGitHubLink');
     const modalCertificadoLink = document.getElementById('modalCertificadoLink');
+    const modalPageLink = document.getElementById('modalPageLink');
 
     modalTitle.textContent = title;
     modalImage.src = imageSrc;
     modalDescription.textContent = description;
 
-    // Configura los enlaces
-    modalGitHubLink.href = githubLink;
-    modalGitHubLink.style.display = githubLink ? 'inline-block' : 'none';
+    const isClubMamba = title.trim().toLowerCase() === 'club mamba';
 
-    modalCertificadoLink.href = certificadoLink;
-    modalCertificadoLink.style.display = certificadoLink ? 'inline-block' : 'none';
+    if (isClubMamba) {
+        modalGitHubLink.style.display = 'none';
+        modalCertificadoLink.style.display = 'none';
+        modalPageLink.href = pageLink || '#';
+        modalPageLink.style.display = pageLink ? 'inline-block' : 'none';
+    } else if (certificadoLink) {
+        modalGitHubLink.style.display = 'none';
+        modalPageLink.style.display = 'none';
+        modalCertificadoLink.href = certificadoLink;
+        modalCertificadoLink.style.display = 'inline-block';
+    } else {
+        modalCertificadoLink.style.display = 'none';
+        modalPageLink.style.display = 'none';
+        modalGitHubLink.href = githubLink || '#';
+        modalGitHubLink.style.display = githubLink ? 'inline-block' : 'none';
+    }
 
     modal.style.display = 'flex';
 }
